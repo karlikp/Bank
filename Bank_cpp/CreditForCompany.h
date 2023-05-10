@@ -2,6 +2,6 @@
 #include "Credit.h"
 
 class CreditForCompany : public Credit
-{
+{ 
 };
 

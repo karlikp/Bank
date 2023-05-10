@@ -13,14 +13,14 @@ class Credit
 
 public:
 
-	friend auto make_decision();
-	virtual void complete_data() = 0;
-	virtual int credit_capacity() = 0;
+	//friend auto make_decision();
+	//virtual void complete_data() = 0;
+	//virtual int credit_capacity() = 0;
 	virtual bool check_capacity();
 	virtual void feedback();
 	virtual int checkpoint();
-	virtual void final();
-	virtual void save_info();
-	virtual void exit();
+	//virtual void final();
+	//virtual void save_info();
+	//virtual void exit();
 };
 

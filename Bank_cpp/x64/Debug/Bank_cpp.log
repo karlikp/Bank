@@ -1,0 +1,5 @@
+﻿  Functions.cpp
+  main.cpp
+C:\Users\Ryzen\Desktop\Projekty\Bank_cpp\Bank_cpp\main.cpp(11,18): error C3779: 'make_decision': a function that returns 'auto' cannot be used before it is defined
+C:\Users\Ryzen\Desktop\Projekty\Bank_cpp\Bank_cpp\Functions.h(3,7): message : see declaration of 'make_decision'
+  Generating Code...
