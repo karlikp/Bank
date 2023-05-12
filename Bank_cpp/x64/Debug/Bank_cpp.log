@@ -1,5 +1,5 @@
 ﻿  Functions.cpp
-  main.cpp
-C:\Users\Ryzen\Desktop\Projekty\Bank_cpp\Bank_cpp\main.cpp(11,18): error C3779: 'make_decision': a function that returns 'auto' cannot be used before it is defined
-C:\Users\Ryzen\Desktop\Projekty\Bank_cpp\Bank_cpp\Functions.h(3,7): message : see declaration of 'make_decision'
-  Generating Code...
+C:\Users\Ryzen\Desktop\Projekty\Bank_cpp\Bank_cpp\Functions.cpp(103,3): warning C4060: switch statement contains no 'case' or 'default' labels
+Functions.obj : error LNK2019: unresolved external symbol "public: __cdecl ConsolidationCredit::ConsolidationCredit(void)" (??0ConsolidationCredit@@QEAA@XZ) referenced in function "class Credit * __cdecl make_decision(void)" (?make_decision@@YAPEAVCredit@@XZ)
+Functions.obj : error LNK2019: unresolved external symbol "public: __cdecl ConsolidationCredit::~ConsolidationCredit(void)" (??1ConsolidationCredit@@QEAA@XZ) referenced in function "class Credit * __cdecl make_decision(void)" (?make_decision@@YAPEAVCredit@@XZ)
+C:\Users\Ryzen\Desktop\Projekty\Bank_cpp\x64\Debug\Bank_cpp.exe : fatal error LNK1120: 2 unresolved externals

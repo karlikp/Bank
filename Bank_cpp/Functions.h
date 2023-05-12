@@ -1,3 +1,3 @@
 #pragma once
 
-auto* make_decision();
+Credit* make_decision();

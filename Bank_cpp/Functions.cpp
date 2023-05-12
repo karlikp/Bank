@@ -12,7 +12,7 @@
 #include "InvestmentCredit.h"
 #include "StartUpCredit.h"
 
-#ifdef DEBUG
+//#ifdef DEBUG
 
 
 
@@ -27,20 +27,20 @@ using namespace std;
 //StartUpCredit* start_up;
 
 
- auto* make_decision()
+ Credit* make_decision()
 {
-	Credit* current = nullptr;
-	ConsumerCredit* consumer = nullptr;
+	//credit* current = nullptr;
+	//consumercredit* consumer = nullptr;
 
 	//*current == &consumer;
 
-	MortgageCredit* mortgage = nullptr;
-	ConsolidationCredit* consolidation = nullptr;
-	WorkingCapitalCredit* working_capital = nullptr;
-	InvestmentCredit* investment = nullptr;
-	StartUpCredit* start_up = nullptr;
+	//mortgagecredit* mortgage = nullptr;
+	//consolidationcredit* consolidation = nullptr;
+	//workingcapitalcredit* working_capital = nullptr;
+	//investmentcredit* investment = nullptr;
+	//startupcredit* start_up = nullptr;
 	int target, kind;
-	string correct;
+	Credit* current = nullptr;
 	cout << "This program is able to get a credit for you" << endl;
 	cout << "********************************************" << endl;
 
@@ -56,14 +56,25 @@ using namespace std;
 		switch (kind)
 		{
 		case 1:
-			*current = &consumer;
-			break;
+		{
+			ConsumerCredit choice;
+			current = &choice;
+		}
+		break;
 		case 2:
-			*current = &mortgage;
-			break;
+		{
+
+			MortgageCredit choice;
+			current = &choice;
+
+		}
+		break;
 		case 3:
-			*current = &consolidation;
-			break;
+		{
+			ConsolidationCredit choice;
+			current = &choice;	
+		}	
+		break;
 		}
 	}
 	else
@@ -74,18 +85,24 @@ using namespace std;
 		cin >> kind;
 		switch (kind)
 		{
-		case 1:
-			*current = &working_capital;
-			break;
-		case 2:
-			*current = &investment;
-			break;
-		case 3:
-			*current = &start_up;
-			break;
+		//case 1:
+		//	WorkingCapitalCredit choice;
+		//	return choice;
+		//	//current = &working_capital;
+		//	//break;
+		//case 2:
+		//	InvestmentCredit choice;
+		//	return choice;
+		//	//current = &investment;
+		////	break;
+		//case 3:
+		//	StartUpCredit choice;
+		//	return choice;
+		//	//current = &start_up;
+		////	break;
 		}
 	}
 	return current;
 }
 
-#endif // DEBUG
+//#endif // DEBUG
