@@ -1,0 +1,12 @@
+legal_name: Ania Nowak
+age: 20
+birthplace: Katowice
+evidence_number: QWE123212
+PESEL: 43217891112
+monthly_income: 4000
+monthly_spending: 2000
+Would_you_like_pledge(write_true_or_false): true
+*(opcional)pledge_name: car	
+*(opcional)pledge_value: 10000
+
+

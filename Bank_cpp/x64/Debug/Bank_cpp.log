@@ -1,5 +1,24 @@
-﻿  Functions.cpp
-C:\Users\Ryzen\Desktop\Projekty\Bank_cpp\Bank_cpp\Functions.cpp(103,3): warning C4060: switch statement contains no 'case' or 'default' labels
-Functions.obj : error LNK2019: unresolved external symbol "public: __cdecl ConsolidationCredit::ConsolidationCredit(void)" (??0ConsolidationCredit@@QEAA@XZ) referenced in function "class Credit * __cdecl make_decision(void)" (?make_decision@@YAPEAVCredit@@XZ)
-Functions.obj : error LNK2019: unresolved external symbol "public: __cdecl ConsolidationCredit::~ConsolidationCredit(void)" (??1ConsolidationCredit@@QEAA@XZ) referenced in function "class Credit * __cdecl make_decision(void)" (?make_decision@@YAPEAVCredit@@XZ)
-C:\Users\Ryzen\Desktop\Projekty\Bank_cpp\x64\Debug\Bank_cpp.exe : fatal error LNK1120: 2 unresolved externals
+﻿  ConsolidationCredit.cpp
+  ConsumerCredit.cpp
+  Credit.cpp
+C:\Users\Ryzen\Desktop\Git_repos\Dev_progs\Bank_cpp\Bank_cpp\Credit.cpp(33,37): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Ryzen\Desktop\Git_repos\Dev_progs\Bank_cpp\Bank_cpp\Credit.cpp(36,39): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Ryzen\Desktop\Git_repos\Dev_progs\Bank_cpp\Bank_cpp\Credit.cpp(99,36): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Ryzen\Desktop\Git_repos\Dev_progs\Bank_cpp\Bank_cpp\Credit.cpp(108,10): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\Ryzen\Desktop\Git_repos\Dev_progs\Bank_cpp\Bank_cpp\Credit.cpp(113,74): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Ryzen\Desktop\Git_repos\Dev_progs\Bank_cpp\Bank_cpp\Credit.cpp(119,22): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Ryzen\Desktop\Git_repos\Dev_progs\Bank_cpp\Bank_cpp\Credit.cpp(283,32): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Functions.cpp
+C:\Users\Ryzen\Desktop\Git_repos\Dev_progs\Bank_cpp\Bank_cpp\Functions.cpp(99,13): warning C4129: 'S': unrecognized character escape sequence
+C:\Users\Ryzen\Desktop\Git_repos\Dev_progs\Bank_cpp\Bank_cpp\Functions.cpp(316,18): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\Ryzen\Desktop\Git_repos\Dev_progs\Bank_cpp\Bank_cpp\Functions.cpp(317,10): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  InvestmentCredit.cpp
+  main.cpp
+  MortgageCredit.cpp
+C:\Users\Ryzen\Desktop\Git_repos\Dev_progs\Bank_cpp\Bank_cpp\MortgageCredit.cpp(54,25): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  StartUpCredit.cpp
+  WorkingCapitalCredit.cpp
+  Generating Code...
+C:\Users\Ryzen\Desktop\Git_repos\Dev_progs\Bank_cpp\Bank_cpp\Credit.cpp(181): warning C4715: 'Credit::checkpoint': not all control paths return a value
+  LINK : C:\Users\Ryzen\Desktop\Git_repos\Dev_progs\Bank_cpp\x64\Debug\Bank_cpp.exe not found or not built by the last incremental link; performing full link
+  Bank_cpp.vcxproj -> C:\Users\Ryzen\Desktop\Git_repos\Dev_progs\Bank_cpp\x64\Debug\Bank_cpp.exe

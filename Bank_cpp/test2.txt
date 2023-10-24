@@ -1,0 +1,12 @@
+legal_name: Miroslaw Zelent
+age: 50
+birthplace: Katowice
+evidence_number: CPP123412
+PESEL: 98767891144
+monthly_income: 7000
+monthly_spending: 3000
+Would_you_like_pledge(write_true_or_false): true
+*(opcional)pledge_name: garage	
+*(opcional)pledge_value: 50000
+
+

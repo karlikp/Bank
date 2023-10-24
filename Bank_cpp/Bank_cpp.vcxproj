@@ -130,8 +130,6 @@
     <ClInclude Include="ConsolidationCredit.h" />
     <ClInclude Include="ConsumerCredit.h" />
     <ClInclude Include="Credit.h" />
-    <ClInclude Include="CreditForCompany.h" />
-    <ClInclude Include="CreditForCustomer.h" />
     <ClInclude Include="Functions.h" />
     <ClInclude Include="InvestmentCredit.h" />
     <ClInclude Include="MortgageCredit.h" />
@@ -142,8 +140,6 @@
     <ClCompile Include="ConsolidationCredit.cpp" />
     <ClCompile Include="ConsumerCredit.cpp" />
     <ClCompile Include="Credit.cpp" />
-    <ClCompile Include="CreditForCompany.cpp" />
-    <ClCompile Include="CreditForCustomer.cpp" />
     <ClCompile Include="Functions.cpp" />
     <ClCompile Include="InvestmentCredit.cpp" />
     <ClCompile Include="main.cpp" />

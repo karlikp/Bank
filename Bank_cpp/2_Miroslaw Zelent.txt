@@ -1,0 +1,17 @@
+legal_name: Miroslaw Zelent
+age: 50
+birthplace: Katowice
+evidence_number: CPP123412
+PESEL: 98767891144
+monthly_income: 7000
+monthly_spending: 3000
+credit_amount: 50000
+instalment_amount: 120
+pledge_value: 50000
+pledge_name: garage
+total_credit: 96801
+capacity: 3016.67
+safety_bufor: 983.333
+monthly_payment: 806.675
+kind_credit: ConsolidationCredit
+other_bank: PKO SA

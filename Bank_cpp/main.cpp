@@ -7,8 +7,5 @@ using namespace std;
 
 int main()
 {
-
-	//auto* pointer = make_decision();
-
-	//Credit K1;
+	executing_program();
 }
