@@ -36,8 +36,8 @@ public:
 	
 	std::string legal_name;
 
-	Credit();
-	~Credit();
+	Credit() = default;
+	~Credit() = default;
 	virtual void operator++();
 
 	virtual void read_data_file();

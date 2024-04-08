@@ -43,11 +43,11 @@ void MortgageCredit::final()
 {
 	float own_contribution = Credit::credit_amount * 0.1;
 
-	cout << "\nIn order to complete the conditions of credit. I am paying the amount of " << own_contribution << " zl\
-			 \nIf you want to pay the amount write 'I am paying', otherwise enter 'I am resigning': ";
-	string answer = type_in_answer("I am paying", "I am resigning");
+	cout << "\nIn order to complete the conditions of credit you have to pay own contribution: " << own_contribution << " zl\
+			 \nDo you pay? Enter 'yes' or 'no':  ";
+	string answer = type_in_answer("yes", "no");
 
-	if (answer == "I am paying")
+	if (answer == "yes")
 	{
 		cout << "\nCredit completed successfully!\
 				 \nOur bank will transfer of credit to bank account number: " << bank_account_number << " today or the nearest weekday.\
@@ -55,7 +55,7 @@ void MortgageCredit::final()
 
 		lack_finalisation = false;
 	}
-	else if (answer == "I am resigning")
+	else 
 	{
 		cout << "\nUnfortunately, credit uncompleted successfully\
 				 \nPayment amount 10% of the credit is a prerequisite";

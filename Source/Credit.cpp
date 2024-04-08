@@ -8,16 +8,6 @@
 
 using namespace std;
 
-
-Credit::Credit()
-{
-}
-
-
-Credit::~Credit()
-{
-}
-
 void Credit::input_universal()
 {
 	cout << "\nYou will be asked to complete form your privat information needed to applying for a credit.\n";
@@ -325,17 +315,25 @@ void Credit::operator ++()
 
 void Credit::read_data_file()
 {
+
 	cout << "\nWould you like type your personal data from file?";
-	cout <<	"\nIf you like write 'yes', otherwise write 'no': ";
+	cout <<	"\nEnter 'yes' or 'no': ";
 	string answer = type_in_answer("yes", "no");
+	
 
 	if (answer == "yes")
 	{
 		string file_name;
-		cout << "\n Type in file name with your data: ";
+		cout << "\nType in file name with your data: ";
 		getline(cin >> ws, file_name);
-
 		ifstream file(file_name);
+
+		if(!file.good())
+		{
+			cout << "Wrong file name!";
+			read_data_file();
+		}
+
 		if (file)
 		{
 
@@ -357,7 +355,7 @@ void Credit::read_data_file()
 			}
 		}
 		file.close();
-
 		read_data = true;
 	}
+	
 }

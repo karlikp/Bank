@@ -16,12 +16,10 @@ string get_fullname()
 
     if (regex_match(name, reg)) 
         return name;
-    else 
-	{
-        std::cout << "Wrong full name.\n";
-        get_fullname();
-    }
-	return "";
+   
+    std::cout << "Wrong full name!\n";
+    return get_fullname();
+    
 }
 
  string get_age()
@@ -38,14 +36,11 @@ string get_fullname()
 	else if(stoi(age) < 18)
 	{
 		cout << "\nYou have previously declared that you are of legal age\n";
-		get_age();
+		return get_age();
 	}
-	else 
-	{
-		std::cout << "Wrong age.\n";
-		get_age();
-	}
-	return "";
+	
+    std::cout << "Wrong age!\n";
+    return get_age();
  }
 
  string get_birthplace()
@@ -59,12 +54,8 @@ string get_fullname()
     if (regex_match(name, reg)) 
         return name;
         
-    else 
-	{
-        std::cout << "Wrong answer.\n";
-        get_birthplace();
-    }
-	return "";
+    std::cout << "Wrong answer!\n";
+    return get_birthplace();
 }
 
  string get_evidence_number()
@@ -78,12 +69,8 @@ string get_fullname()
     if (regex_match(number, reg)) 
         return number;
         
-    else 
-	{
-        std::cout << "Wrong answer.\n";
-        get_evidence_number();
-    }
-	return "";
+    std::cout << "Wrong answer!\n";
+    return get_evidence_number();
  }
 
  string get_PESEL()
@@ -98,12 +85,8 @@ string get_fullname()
     if (regex_match(number, reg)) 
         return number;
         
-    else 
-	{
-        std::cout << "Wrong answer.\n";
-        get_PESEL();
-    }
-	return "";
+    std::cout << "Wrong answer!\n";
+    return get_PESEL();
  }
 
 
@@ -118,12 +101,9 @@ string get_fullname()
     if (regex_match(number, reg)) 
         return stoi(number);
         
-    else 
-	{
-        std::cout << "Wrong answer.\n";
-        get_number(desire_info);
-    }
-	return 0;
+    
+    std::cout << "Wrong answer!\n";
+    return get_number(desire_info);
  }
 
 
@@ -138,12 +118,8 @@ string get_fullname()
     if (regex_match(name, reg)) 
         return name;
         
-    else 
-	{
-        std::cout << "Wrong answer.\n";
-        get_letter_answer(desire_info);
-    }
-	return "";
+    std::cout << "Wrong answer!\n";
+    return get_letter_answer(desire_info);
  }
 
 
@@ -158,13 +134,8 @@ string get_fullname()
     if (regex_match(number, reg)) 
         return number;
         
-    else 
-	{
-        std::cout << "Wrong answer.\n";
-         get_account_number();
-
-    }
-	return "";
+    std::cout << "Wrong answer!\n";
+    return get_account_number();
  }
 
  string get_NIP()
@@ -178,13 +149,8 @@ string number;
     if (regex_match(number, reg)) 
         return number;
         
-    else 
-	{
-        std::cout << "Wrong answer.\n";
-         get_NIP();
-
-    }
-	return "";
+    std::cout << "Wrong answer!\n";
+    return get_NIP();
  }
 
 string type_in_answer(string yes, string no)
@@ -196,14 +162,6 @@ string type_in_answer(string yes, string no)
 	{
 		return answer;
 	}
-	else
-	{
-		do
-		{
-			cout << "\nWrong answer.";
-			cout << "\nCorrect it: ";
-			getline(cin >> ws, answer);
-		} while (!(answer == yes or answer == no)); 
-	}
-		return answer;
+    cout << "\nWrong answer.";
+	return type_in_answer(yes, no);
 }
