@@ -1,5 +1,5 @@
-legal_name: Jerzy Grebosz
-age: 65
+legal_name: Adam Nowak
+age: 45
 birthplace: Krakow
 evidence_number: CPP211232
 PESEL: 12345678911

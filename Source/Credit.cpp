@@ -2,9 +2,9 @@
 #include <fstream>   
 #include <sstream>   
 
-#include "Credit.h"
-#include "Functions.h"
-#include "FormValidation.h"
+#include "Headers\Credit.h"
+#include "Headers\Functions.h"
+#include "Headers\FormValidation.h"
 
 using namespace std;
 
@@ -24,7 +24,7 @@ void Credit::input_universal()
 	cout << "\nHow high is your monthly income?"; 
 	monthly_income = get_number("monthly income");
 
-	cout << "\nHow high are your monthly spending on average. Remember that lying can make your insolvent.";
+	cout << "\nHow high are your monthly spending on average.";
 	monthly_spending = get_number("monthly spending");
 
 }
@@ -137,7 +137,7 @@ void Credit::feedback()
 bool Credit::checkpoint() 
 {
 	string answer;
-	cout << "\n\nWould you like to check another bank offers or exit the program?";
+	cout << "\nWould you like to check another bank offers or exit the program?";
 	cout <<	"\nType in 'check' or '!exit': ";
 	answer = type_in_answer("check", "!exit");
 	
@@ -241,9 +241,9 @@ void Credit::save_all_data()
 void Credit::save_based_data()
 {
 	string counter = to_string(credit_counter);
-	string name = counter + "_" + legal_name + ".txt";
+	string name = counter + ". " + legal_name + ".txt";
 
-	ofstream file(name);
+	ofstream file("Customers/"+name);
 
 	if (file)
 	{
@@ -270,9 +270,9 @@ void Credit::save_based_data()
 void Credit::save_credit_data()
 {
 	string counter = to_string(credit_counter);
-	string name = counter + "_" + legal_name + ".txt";
+	string name = counter + ". " + legal_name + ".txt";
 
-	ofstream file(name, std::ios_base::app);
+	ofstream file("Customers/" + name, std::ios_base::app);
 
 	if (file)
 	{
@@ -315,6 +315,7 @@ void Credit::operator ++()
 
 void Credit::read_data_file()
 {
+	bool correction = false;
 
 	cout << "\nWould you like type your personal data from file?";
 	cout <<	"\nEnter 'yes' or 'no': ";
@@ -323,39 +324,44 @@ void Credit::read_data_file()
 
 	if (answer == "yes")
 	{
-		string file_name;
-		cout << "\nType in file name with your data: ";
-		getline(cin >> ws, file_name);
-		ifstream file(file_name);
-
-		if(!file.good())
-		{
-			cout << "Wrong file name!";
-			read_data_file();
-		}
-
-		if (file)
+		do
 		{
 
-			string temp, first_name, last_name;
-			file >> temp >> first_name >> last_name;
-			legal_name = first_name + " " + last_name;
-			file >> temp >> age;
-			file >> temp >> birthplace;
-			file >> temp >> evidence_number;
-			file >> temp >> PESEL;
-			file >> temp >> monthly_income;
-			file >> temp >> monthly_spending;
-			file >> temp >> temp;
-			if (temp == "true")
+
+			string file_name;
+			cout << "\nType in file name with your data: ";
+			getline(cin >> ws, file_name);
+			ifstream file(file_name);
+
+			if (!file.good())
 			{
-				pledge = true;
-				file >> temp >> pledge_name;
-				file >> temp >> pledge_value;
+				cout << "Wrong file name!\n";
+				correction = true;
 			}
-		}
-		file.close();
-		read_data = true;
+
+			if (file)
+			{
+
+				string temp, first_name, last_name;
+				file >> temp >> first_name >> last_name;
+				legal_name = first_name + " " + last_name;
+				file >> temp >> age;
+				file >> temp >> birthplace;
+				file >> temp >> evidence_number;
+				file >> temp >> PESEL;
+				file >> temp >> monthly_income;
+				file >> temp >> monthly_spending;
+				file >> temp >> temp;
+				if (temp == "true")
+				{
+					pledge = true;
+					file >> temp >> pledge_name;
+					file >> temp >> pledge_value;
+				}
+			}
+			file.close();
+			read_data = true;
+		} while (correction);
 	}
 	
 }

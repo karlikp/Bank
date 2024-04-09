@@ -1,4 +1,4 @@
-legal_name: Miroslaw Zelent
+legal_name: Anna Kowalska
 age: 50
 birthplace: Katowice
 evidence_number: CPP123412

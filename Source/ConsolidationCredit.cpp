@@ -2,9 +2,9 @@
 #include <fstream>   
 #include <sstream>   
 
-#include "ConsolidationCredit.h"
-#include "Functions.h"
-#include "FormValidation.h"
+#include "Headers\ConsolidationCredit.h"
+#include "Headers\Functions.h"
+#include "Headers\FormValidation.h"
 
 using namespace std;
 
@@ -27,8 +27,7 @@ bool ConsolidationCredit::acceptation_conditions()
 
 void ConsolidationCredit::input_specific()
 {
-	cout << "\nType in the bank name which give you previous credit: ";
-	other_bank = get_letter_answer("other bank");
+	other_bank = get_letter_answer("the bank name which give you previous credit:");
 }
 
 
@@ -40,18 +39,19 @@ int ConsolidationCredit::return_lending_rate()
 
 void ConsolidationCredit::final()
 {
-	cout << "\nCredit completed successfully!\
-			 \nOur bank will contact to " << other_bank << " today or the nearest weekday and repay amount consistent with the contract\
-		     \nThank you for cooperation.";
+	cout << "\nCredit completed successfully!";
+	cout << "\nOur bank will contact to " << other_bank;
+	cout << " today or the nearest weekday and repay amount consistent with the contract.";
+	cout <<	"\nThank you for cooperation.\n";
 }
 
 
 void ConsolidationCredit::save_specific_data()
 {
 	string counter = to_string(credit_counter);
-	string name = counter + "_" + legal_name + ".txt";
+	string name = counter + ". " + legal_name + ".txt";
 
-	ofstream file(name, std::ios_base::app);
+	ofstream file("Customers/" + name, std::ios_base::app);
 
 	if (file)
 	{

@@ -3,9 +3,9 @@
 #include <fstream>   
 #include <sstream>  
 
-#include "MortgageCredit.h"
-#include "Functions.h"
-#include "FormValidation.h"
+#include "Headers\MortgageCredit.h"
+#include "Headers\Functions.h"
+#include "Headers\FormValidation.h"
 
 using namespace std;
 
@@ -49,16 +49,18 @@ void MortgageCredit::final()
 
 	if (answer == "yes")
 	{
-		cout << "\nCredit completed successfully!\
-				 \nOur bank will transfer of credit to bank account number: " << bank_account_number << " today or the nearest weekday.\
-				 \nThank you for cooperation.";
+		cout << "\nCredit completed successfully!";
+		cout << "\nOur bank will transfer of credit to bank account number: "; 
+		cout << bank_account_number << " today or the nearest weekday.";
+		cout <<	"\nThank you for cooperation.\n";
+
 
 		lack_finalisation = false;
 	}
 	else 
 	{
-		cout << "\nUnfortunately, credit uncompleted successfully\
-				 \nPayment amount 10% of the credit is a prerequisite";
+		cout << "\nUnfortunately, credit uncompleted successfully";
+		cout <<	"\nPayment amount 10 % of the credit is a prerequisite";
 
 		lack_finalisation = true;
 	}
@@ -68,9 +70,9 @@ void MortgageCredit::final()
 void MortgageCredit::save_specific_data()
 {
 	string counter = to_string(credit_counter);
-	string name = counter + "_" + legal_name + ".txt";
+	string name = counter + ". " + legal_name + ".txt";
 
-	ofstream file(name, std::ios_base::app);
+	ofstream file("Customers/" + name, std::ios_base::app);
 
 	if (file)
 	{
