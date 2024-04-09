@@ -1,7 +1,8 @@
-//#pragma once
+#include "Credit.h"	
+
 #ifndef CONSUMERCREDIT_H
 #define CONSUMERCREDIT_H
-#include "Credit.h"	
+
 
 						
 class ConsumerCredit : public Credit

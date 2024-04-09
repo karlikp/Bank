@@ -1,0 +1,17 @@
+legal_name: Anna Kowalska
+age: 50
+birthplace: Katowice
+evidence_number: CPP123412
+PESEL: 98767891144
+monthly_income: 7000
+monthly_spending: 3000
+credit_amount: 300000
+instalment_amount: 360
+pledge_value: 50000
+pledge_name: garage
+total_credit: 947777
+capacity: 2738.89
+safety_bufor: 1261.11
+monthly_payment: 2632.71
+kind_credit: MortgageCredit
+bank_account_number: 89-6785-4567-2345-3456-4572-3456

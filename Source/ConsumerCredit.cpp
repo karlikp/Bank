@@ -2,9 +2,9 @@
 #include <fstream>   
 #include <sstream>  
 
-#include "ConsumerCredit.h"
-#include "Functions.h"
-#include "FormValidation.h"
+#include "Headers\ConsumerCredit.h"
+#include "Headers\Functions.h"
+#include "Headers\FormValidation.h"
 
 using namespace std;
 
@@ -41,18 +41,18 @@ int ConsumerCredit::return_lending_rate()
 void ConsumerCredit::final()
 {
 	cout << "\nCredit completed successfully!";
-	cout <<	"\nOur bank will transfer of credit to bank account number:";
+	cout <<	"\nOur bank will transfer of credit to bank account number: ";
 	cout << bank_account_number << " today or the nearest weekday.";
-	cout <<	"\nThank you for cooperation.";
+	cout <<	"\nThank you for cooperation.\n";
 }
 
 
 void ConsumerCredit::save_specific_data()
 {
 	string counter = to_string(credit_counter);
-	string name = counter + "_" + legal_name + ".txt";
+	string name = counter + ". " + legal_name + ".txt";
 
-	ofstream file(name, std::ios_base::app);
+	ofstream file("Customers/" + name, std::ios_base::app);
 
 	if (file)
 	{

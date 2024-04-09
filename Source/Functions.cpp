@@ -2,32 +2,36 @@
 #include <ctype.h>
 #include <regex>
 
-#include "Credit.h"
+#include "Headers\Credit.h"
 
-#include "Functions.h"
-#include "FormValidation.h"
-#include "ConsumerCredit.h"
-#include "MortgageCredit.h"
+#include "Headers\Functions.h"
+#include "Headers\FormValidation.h"
+#include "Headers\ConsumerCredit.h"
+#include "Headers\MortgageCredit.h"
 
-#include "ConsolidationCredit.h"
-#include "WorkingCapitalCredit.h"
-#include "InvestmentCredit.h"
-#include "StartUpCredit.h"
+#include "Headers\ConsolidationCredit.h"
+#include "Headers\WorkingCapitalCredit.h"
+#include "Headers\InvestmentCredit.h"
+#include "Headers\StartUpCredit.h"
 
 using namespace std;
 
 
  Credit* make_decision()
 {
-	int target, kind;
+	int target = -1, kind = -1;
 	Credit* current = nullptr;       
 	
 	cout << "\nWould you like recive a credit for individual customers or a company credit? ";
 	cout << "\nTo select an individual credit, type in number: '1'.";
 	cout << "\nWhereas to choose a company credit, type in number: '2'.";
-
-	target = get_number("1 or 2");
+	do {
+		if (target != -1)
+			cout << "Wrong answer!\n";
+		target = get_number("1 or 2");
+	} while (not (target == 1 or target == 2));
 	cout << endl;
+
 	if (target == 1)
 	{
 		cout << "Which credit kind you prefer?";
@@ -35,9 +39,12 @@ using namespace std;
 		cout << "\n- nr 1: Mortage credit (RRSO: 10%),";
 		cout << "\n- nr 2: Consolidation credit (RRSO: 15%),";
 		cout << "\n- nr 3: Consumer credit (RRSO: 20%).";
+		do {
+			if (kind != -1)
+				cout << "Wrong answer!\n";
+			kind = get_number("1, 2 or 3");
+		} while (not (kind == 1 or kind == 2 or kind == 3));
 
-		kind = get_number("1, 2 or 3");
-		
 		switch (kind)
 		{
 		case 1:

@@ -2,7 +2,7 @@
 #include <ctype.h>
 #include <regex>
 
-#include "FormValidation.h"
+#include "Headers\FormValidation.h"
 
 using namespace std;
 
@@ -30,15 +30,16 @@ string get_fullname()
 
     regex reg("\\d{2}");
 
-    if (regex_match(age, reg) and stoi(age) >= 18) 
-        return age;
-
-	else if(stoi(age) < 18)
-	{
-		cout << "\nYou have previously declared that you are of legal age\n";
-		return get_age();
-	}
-	
+    if (regex_match(age, reg))
+    {
+        if (stoi(age) >= 18)
+            return age;
+        else
+        {
+            cout << "\nYou have previously declared that you are of legal age\n";
+            return get_age();
+        }
+    }
     std::cout << "Wrong age!\n";
     return get_age();
  }
@@ -110,7 +111,7 @@ string get_fullname()
  string get_letter_answer(std::string desire_info)
  {
 	string name;
-    cout << "Enter  " << desire_info << ": ";
+    cout << "\nEnter  " << desire_info << ": ";
     getline(std::cin, name);
 
     regex reg("[A-Za-z]+[ ]*[A-Za-z]*[ ]*[A-Za-z]*");
@@ -162,6 +163,7 @@ string type_in_answer(string yes, string no)
 	{
 		return answer;
 	}
-    cout << "\nWrong answer.";
+    cout << "\nWrong answer!\n";
+    cout << "Enter correct: ";
 	return type_in_answer(yes, no);
 }
