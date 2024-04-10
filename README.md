@@ -1,5 +1,14 @@
 # 🏦 Bank 	
-### 🛠️ How the program works
+### 💬 Context of the project:
+This was my main project from the second semester of my studies.
+I developed it as part of a computer programming course.
+
+### 🚀 My motivation:
+I decided to take on this project to work on real-life issues. 
+Banks play a crucial role in today's world. 
+Automating the loan approval process would benefit consultants by saving their time and their employers' money.
+
+## 🛠️ How the program works
 This program provides loans to individuals or companies.
   Both individual customers and companies can benefit from three types of loans.
 
@@ -35,16 +44,6 @@ https://miro.com/app/board/uXjVMHVvLIQ=/?share_link_id=838234918176
 8. The program informs about the success or failure of the loan
 9. If the loan has been granted, the information is saved to a text file in the `/Bank/Source/Customers` directory,
 10. The customer chooses whether he wants to get another loan or exit the program.
-
-
-### 💬 Context of the project:
-This was my main project from the second semester of my studies.
-I developed it as part of a computer programming course.
-
-### 🚀 My motivation:
-I decided to take on this project to work on real-life issues. 
-Banks play a crucial role in today's world. 
-Automating the loan approval process would benefit consultants by saving their time and their employers' money.
 
 ## 📌 To run the program:
 1. Clone the repository
