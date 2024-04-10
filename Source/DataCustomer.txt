@@ -6,7 +6,7 @@ PESEL: 12345678911
 monthly_income: 6000
 monthly_spending: 3500
 Would_you_like_pledge(write_true_or_false): true
-*(opcional)pledge_name: bike	
-*(opcional)pledge_value: 10000
+*(opcional)pledge_name: bike
+*(opcional)pledge_value: 15000
 
 

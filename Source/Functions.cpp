@@ -22,7 +22,7 @@ using namespace std;
 	int target = -1, kind = -1;
 	Credit* current = nullptr;       
 	
-	cout << "\nWould you like recive a credit for individual customers or a company credit? ";
+	cout << "\nWould you like receive a credit for individual customers or a company credit? ";
 	cout << "\nTo select an individual credit, type in number: '1'.";
 	cout << "\nWhereas to choose a company credit, type in number: '2'.";
 	do {
@@ -36,9 +36,9 @@ using namespace std;
 	{
 		cout << "Which credit kind you prefer?";
 		cout << "\nPossible options:";
-		cout << "\n- nr 1: Mortage credit (RRSO: 10%),";
-		cout << "\n- nr 2: Consolidation credit (RRSO: 15%),";
-		cout << "\n- nr 3: Consumer credit (RRSO: 20%).";
+		cout << "\n- nr 1: Mortgage credit (APR: 10%),";
+		cout << "\n- nr 2: Consolidation credit (APR: 15%),";
+		cout << "\n- nr 3: Consumer credit (APR: 20%).";
 		do {
 			if (kind != -1)
 				cout << "Wrong answer!\n";
@@ -62,9 +62,9 @@ using namespace std;
 	{
 		cout << "Which credit kind you prefer?";
 		cout << "\nPossible options:";
-		cout << "\n- nr 1: Investment credit (RRSO: 6 %),";
-		cout << "\n- nr 2: Working capital credit (RRSO: 8%),";
-		cout << "\n- nr 3: Start-up credit (RRSO: 10%)"; 
+		cout << "\n- nr 1: Investment credit (APR: 6 %),";
+		cout << "\n- nr 2: Working capital credit (APR: 8%),";
+		cout << "\n- nr 3: Start-up credit (APR: 10%)"; 
 		
 		kind = get_number("1, 2 or 3");
 
@@ -118,13 +118,13 @@ void executing_program()
 
 				credit_kind->input_credit_details();
 				credit_kind->input_specific();
-				credit_kind->calculate_reduce_bufor();
-				credit_kind->calculate_capacity();
+				credit_kind->calculate_reduce_buffer();
+				credit_kind->calculate_monthly_capacity();
 				credit_kind->calculate_instalment(lending_rate);
 				credit_kind->check_capacity();
 
 				if (credit_kind->verification != true)
-					credit_kind->calculate_current_oportunity(lending_rate);
+					credit_kind->calculate_current_opportunity(lending_rate);
 				
 				else if (credit_kind->verification == true)
 					credit_kind->calculate_credit();

@@ -13,7 +13,7 @@ bool WorkingCapitalCredit::acceptation_conditions()
 	string agreeing;
 	bool acceptation = false;
 
-	cout << "\nThe credit you can recive provided you use them for your business and your company exist at least 12 months.";
+	cout << "\nThe credit you can receive provided you use them for settling your current expenses in company.";
 	cout << "\nAre you of legal age and accept the terms?";  
 	cout << "\nType in: 'accept' or 'reject' (without apostrophes): ";
 

@@ -14,7 +14,7 @@ bool MortgageCredit::acceptation_conditions()
 	string answer;
 	bool acceptation = false;
 
-	cout << "\nYou can get this credit, provided that you use it only to buy real property.";
+	cout << "\nThe credit you can receive providing that you use it only to buy real property.";
 	cout << "\nYou have to pay 10% credit amount, during credit finalisation.";
 	cout << "\nAre you of legal age and accept the term?";
 	cout << "\nType in: 'accept' or 'reject' (without apostrophes): ";

@@ -7,11 +7,11 @@ monthly_income: 6000
 monthly_spending: 3500
 credit_amount: 200000
 instalment_amount: 300
-pledge_value: 10000
+pledge_value: 15000
 pledge_name: bike
 total_credit: 386581
-capacity: 1333.33
-safety_bufor: 1166.67
+capacity: 1800
+safety_bufor: 700
 monthly_payment: 1288.6
 kind_credit: InvestmentCredit
 NIP: 123-234-34-23

@@ -11,7 +11,7 @@ using namespace std;
 
 bool ConsolidationCredit::acceptation_conditions()
 {
-	cout << "\nThe credit you can recive providing that you will use it to repay other credit.";
+	cout << "\nThe credit you can receive providing that you will use it to repay other credit.";
 	cout << "\nAre you of legal age and accept the term?";
 	cout << "\nType in: 'accept' or 'reject' (without apostrophes): ";
 

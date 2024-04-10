@@ -17,15 +17,15 @@ class Credit
 	std::string pledge_name;
 	float pledge_value; 
 	
-	int instalment_amount;
+	int number_of_instalments;
 	float monthly_payment;
 
 	double total_credit;
-	float current_oportunity;
+	float current_opportunity;
 	
-	float capacity;
-	float safety_bufor;
-	float reduce_bufor;
+	float monthly_capacity;
+	float safety_buffer;
+	float reduce_buffer;
 
 
 public:
@@ -42,10 +42,10 @@ public:
 
 	virtual void read_data_file();
 	virtual void calculate_credit();
-	virtual void calculate_capacity();
+	virtual void calculate_monthly_capacity();
 	virtual void calculate_instalment(int lending_rate);
-	virtual void calculate_current_oportunity(int lending_rate);
-	virtual void calculate_reduce_bufor();
+	virtual void calculate_current_opportunity(int lending_rate);
+	virtual void calculate_reduce_buffer();
 	
 
 	virtual bool acceptation_conditions() = 0;       

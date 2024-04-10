@@ -111,7 +111,7 @@ string get_fullname()
  string get_letter_answer(std::string desire_info)
  {
 	string name;
-    cout << "\nEnter  " << desire_info << ": ";
+    cout << "\nEnter " << desire_info << ": ";
     getline(std::cin, name);
 
     regex reg("[A-Za-z]+[ ]*[A-Za-z]*[ ]*[A-Za-z]*");

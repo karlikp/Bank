@@ -13,7 +13,7 @@ bool InvestmentCredit::acceptation_conditions()
 	string agreeing;
 	bool acceptation = false;
 
-	cout << "\nThe credit you can recive provided you use them for develop your business";  
+	cout << "\nThe credit you can receive provided you use them for develop your business";  
 	cout << "\nAre you of legal age and accept the term?";
 	cout << "\nType in: 'accept' or 'reject' (without apostrophes): ";
 
@@ -30,7 +30,7 @@ void InvestmentCredit::input_specific()
 {
 	bank_account_number = get_account_number();
 	NIP = get_NIP();
-	investment_describe = get_letter_answer("Describe short your investment: ");
+	investment_describe = get_letter_answer("describe short your investment: ");
 }
 
 
