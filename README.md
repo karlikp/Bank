@@ -62,22 +62,13 @@ If you want to upload data from a text file, you must place the file with the ap
 ### 📷 Galery:
 
 ![Pledge_true](https://github.com/karlikp/Bank/assets/115083597/12152da6-9204-4275-8a58-55f6b4489e90)
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  pict.1 Pattern of DataCustomer.txt with plegde</p><br>
+<br>pict.1 Pattern of DataCustomer.txt with plegde<br><br>
 
 ![Pledge_false](https://github.com/karlikp/Bank/assets/115083597/fd004222-0c5d-4996-835a-4c14c899f84e)
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  pict.2 Pattern of DataCustomer.txt without plegde</p><br>
+<br>pict.2 Pattern of DataCustomer.txt without plegde<br><br>
   
 ![Output](https://github.com/karlikp/Bank/assets/115083597/a2ae03cc-afc3-4154-b2c7-329b48c2edbf)
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  pict.3 Output file containing customer and credit data</p><br>
+<br>pict.3 Output file containing customer and credit data<br><br>
 
 
 
