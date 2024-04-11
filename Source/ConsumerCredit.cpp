@@ -2,9 +2,9 @@
 #include <fstream>   
 #include <sstream>  
 
-#include "Headers\ConsumerCredit.h"
-#include "Headers\Functions.h"
-#include "Headers\FormValidation.h"
+#include "Headers/ConsumerCredit.h"
+#include "Headers/Functions.h"
+#include "Headers/FormValidation.h"
 
 using namespace std;
 

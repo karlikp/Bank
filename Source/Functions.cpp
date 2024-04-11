@@ -2,17 +2,17 @@
 #include <ctype.h>
 #include <regex>
 
-#include "Headers\Credit.h"
+#include "Headers/Credit.h"
 
-#include "Headers\Functions.h"
-#include "Headers\FormValidation.h"
-#include "Headers\ConsumerCredit.h"
-#include "Headers\MortgageCredit.h"
+#include "Headers/Functions.h"
+#include "Headers/FormValidation.h"
+#include "Headers/ConsumerCredit.h"
+#include "Headers/MortgageCredit.h"
 
-#include "Headers\ConsolidationCredit.h"
-#include "Headers\WorkingCapitalCredit.h"
-#include "Headers\InvestmentCredit.h"
-#include "Headers\StartUpCredit.h"
+#include "Headers/ConsolidationCredit.h"
+#include "Headers/WorkingCapitalCredit.h"
+#include "Headers/InvestmentCredit.h"
+#include "Headers/StartUpCredit.h"
 
 using namespace std;
 

@@ -1,9 +1,9 @@
 #include <fstream>   
 #include <sstream>   
 
-#include "Headers\WorkingCapitalCredit.h"
-#include "Headers\Functions.h"
-#include "Headers\FormValidation.h"
+#include "Headers/WorkingCapitalCredit.h"
+#include "Headers/Functions.h"
+#include "Headers/FormValidation.h"
 
 using namespace std;
 

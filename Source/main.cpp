@@ -1,4 +1,4 @@
-#include "Headers\Functions.h"
+#include "Headers/Functions.h"
 
 int main()
 {
